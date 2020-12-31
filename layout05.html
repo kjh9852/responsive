@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>layout05</title>
+	<style>
+		* {margin: 0; padding: 0;}
+		#wrap {width: 1600px; margin: 0 auto;}
+		body {background-color: #e3f2fd;}
+		header {width: 100%; height: 150px; background: #73cffc;}
+		aside {float: left; width: 20%; height: 900px; background: #40bbf7;}
+		nav {float: left; width: 80%; height: 300px; background: #19aff4;}
+		section {float: left; width: 80%; height: 300px; background: #01a1f4;}
+		article {float: left; width: 80%; height: 300px; background: #0292e2;}
+		footer {clear: both; width: 100%; height: 150px; background: #0278c1;}
+		
+
+		/* 화면 너비 0 ~ 1200 px*/
+	 @media (max-width: 1240px){
+		#wrap {width: 100%;}
+		article {width: 100%;}
+		nav{ height: 450px; }
+		section {height: 450px;}
+	 }
+
+
+	/* 화면 너비 0 ~ 768 px*/
+	 @media (max-width: 768px) {
+	 	aside {width: 100%; height: 450px;}
+	 	nav {width: 50%;}
+	 	section {width: 50%;}
+
+	 }
+
+	/* 화면 너비 0 ~ 480 px*/
+	 @media (max-width: 500px) {
+	 	nav {width: 100%;}
+	 	section {width: 100%;}
+	 }
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<header></header>
+		<aside></aside>
+		<nav></nav>
+		<section></section>
+		<article></article>
+		<footer></footer>
+	</div>
+</body>
+</html>
